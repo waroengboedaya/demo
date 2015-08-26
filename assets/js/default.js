@@ -26,6 +26,13 @@
      if(document.querySelector("#grid-basic")){
         $("#grid-basic").bootgrid();
     } 
+
+    if(document.querySelector(".fly-group")){
+         $('body').flyLabels();
+    } 
+
+    
+
    if(document.querySelector("#calendar")){
   $('#calendar').fullCalendar({
         // put your options and callbacks here

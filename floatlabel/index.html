@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Bootgrid &#8211; Web Demo : Demo Smorgasbord</title>
+    <title>Form with Float label &#8211; Web Demo : Demo Smorgasbord</title>
     <meta name="description" content="Demo Smorgasbord"/>
     <meta name="author" content="Albert Hardy">
     
-    <link rel="canonical" href="http://waroengboedaya.github.io/demo/bootgrid/">
+    <link rel="canonical" href="http://waroengboedaya.github.io/demo/floatlabel/">
     <meta name="HandheldFriendly" content="True" />
     <meta name="MobileOptimized" content="320" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,7 +27,7 @@
      
     
     
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-bootgrid/1.2.0/jquery.bootgrid.min.css"/>
+    <link rel="stylesheet" type="text/css" href=""/>
     
     
 
@@ -35,9 +35,9 @@
     <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Bootgrid">
+    <meta property="og:title" content="Form with Float label">
     <meta property="og:description" content="bootstrap portal with top navigation">
-    <meta property="og:url" content="http://waroengboedaya.github.io/bootgrid/">
+    <meta property="og:url" content="http://waroengboedaya.github.io/floatlabel/">
     <meta property="og:site_name" content="Web Demo">
 
     <!-- Icons -->
@@ -111,10 +111,10 @@
             <ol class="breadcrumb">
               <li><a href="/demo">Home</a></li>  
               <!--  <li><a href="/Beneficiary/Index">Home</a></li> -->
-              <li class="active">Bootgrid</li>
+              <li class="active">Form with Float label</li>
             </ol>
           </div>
-          <h1 class="pull-left">Bootgrid</h1>
+          <h1 class="pull-left">Form with Float label</h1>
           <div class="pull-right hidden-xs" style="margin-top:20px; ">   </div>
         </div>
       </div>
@@ -123,121 +123,100 @@
     <div class="row" style="margin-bottom:20px;">
       <div class="col-md-12"> <main id="content" class="content" role="main">
 <div class="panel panel-default">
-<div class="panel-heading">JQuery Bootgrid </div>
+<div class="panel-heading">Form Vertical </div>
 <div class="panel-body">
-Source: http://www.jquery-bootgrid.com/
-<table id="grid-basic" class="table table-condensed table-hover table-striped">
-                    <thead>
-                        <tr>
-                            <th data-column-id="id" data-type="numeric">ID</th>
-                            <th data-column-id="sender">Sender</th>
-                            <th data-column-id="received" data-order="desc">Received</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>10238</td>
-                            <td>eduardo@pingpong.com</td>
-                            <td>14.10.2013</td>
-                        </tr>
-                        <tr>
-                            <td>10243</td>
-                            <td>eduardo@pingpong.com</td>
-                            <td>19.10.2013</td>
-                        </tr>
-                        <tr>
-                            <td>10248</td>
-                            <td>eduardo@pingpong.com</td>
-                            <td>24.10.2013</td>
-                        </tr>
-                        <tr>
-                            <td>10253</td>
-                            <td>eduardo@pingpong.com</td>
-                            <td>29.10.2013</td>
-                        </tr>
-                        <tr>
-                            <td>10234</td>
-                            <td>lila@google.com</td>
-                            <td>10.10.2013</td>
-                        </tr>
-                        <tr>
-                            <td>10239</td>
-                            <td>lila@google.com</td>
-                            <td>15.10.2013</td>
-                        </tr>
-                        <tr>
-                            <td>10244</td>
-                            <td>lila@google.com</td>
-                            <td>20.10.2013</td>
-                        </tr>
-                        <tr>
-                            <td>10249</td>
-                            <td>lila@google.com</td>
-                            <td>25.10.2013</td>
-                        </tr>
-                        <tr>
-                            <td>10237</td>
-                            <td>robert@bingo.com</td>
-                            <td>13.10.2013</td>
-                        </tr>
-                        <tr>
-                            <td>10242</td>
-                            <td>robert@bingo.com</td>
-                            <td>18.10.2013</td>
-                        </tr>
-                        <tr>
-                            <td>10247</td>
-                            <td>robert@bingo.com</td>
-                            <td>23.10.2013</td>
-                        </tr>
-                        <tr>
-                            <td>10252</td>
-                            <td>robert@bingo.com</td>
-                            <td>28.10.2013</td>
-                        </tr>
-                        <tr>
-                            <td>10236</td>
-                            <td>simon@yahoo.com</td>
-                            <td>12.10.2013</td>
-                        </tr>
-                        <tr>
-                            <td>10241</td>
-                            <td>simon@yahoo.com</td>
-                            <td>17.10.2013</td>
-                        </tr>
-                        <tr>
-                            <td>10246</td>
-                            <td>simon@yahoo.com</td>
-                            <td>22.10.2013</td>
-                        </tr>
-                        <tr>
-                            <td>10251</td>
-                            <td>simon@yahoo.com</td>
-                            <td>27.10.2013</td>
-                        </tr>
-                        <tr>
-                            <td>10235</td>
-                            <td>tim@microsoft.com</td>
-                            <td>11.10.2013</td>
-                        </tr>
-                        <tr>
-                            <td>10240</td>
-                            <td>tim@microsoft.com</td>
-                            <td>16.10.2013</td>
-                        </tr>
-                        <tr>
-                            <td>10245</td>
-                            <td>tim@microsoft.com</td>
-                            <td>21.10.2013</td>
-                        </tr>
-                        <tr>
-                            <td>10250</td>
-                            <td>tim@microsoft.com</td>
-                            <td>26.10.2013</td>
-                        </tr>
-                    </tbody>
-                </table>
+<style type="text/css">
+    .classic {
+  opacity: 0;
+  top: 1em;
+  z-index: -1;
+  display:none;
+}
+.classic.is-active {
+  opacity: 1;
+  top: 1em;
+  z-index: 1;
+  display: inline-block;
+}
+</style>
+<form>
+  <div class="form-group fly-group">
+    <label for="exampleInputEmail1" class="fly-label classic">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" class="fly-input" placeholder="Email">
+  </div>
+  <div class="form-group fly-group">
+    <label for="exampleInputPassword1" class="fly-label classic">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+     <div class="form-group fly-group">
+              <label for="select" class="fly-label classic">Secret Number</label>
+              <div class="select-wrapper">
+                <select name="select" class="fly-input form-control">
+                  <option value="">Secret Number</option>
+                  <option value="4">4</option>
+                  <option value="8">8</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="23">23</option>
+                  <option value="42">42</option>
+                </select>
+              </div>
+            </div>
 
+  <div class="form-group ">
+    <label for="exampleInputFile" >File input</label>
+    <input type="file" id="exampleInputFile">
+    <p class="help-block">Example block-level help text here.</p>
+  </div>
+
+  <div class="checkbox ">
+    <label>
+      <input type="checkbox"> Check me out
+    </label>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
+</div>
+<div class="panel-footer">Resources:
+<ul>
+<li>https://github.com/clubdesign/floatlabels.js</li>
+<li>https://github.com/m10l/FloatLabel.js</li>
+<li>https://github.com/space150/flyLabel.js</li>
+</ul></div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">Form Horizontal </div>
+<div class="panel-body">
+
+<form class="form-horizontal">
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Remember me
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">Sign in</button>
+    </div>
+  </div>
+</form>
 </div>
 </div>
 </main>
@@ -270,7 +249,11 @@ Source: http://www.jquery-bootgrid.com/
      
     
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-bootgrid/1.2.0/jquery.bootgrid.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/floatlabels.js/1.0.0/floatlabels.min.js"></script>
+    
+    
+    
+    <script src="/demo/assets/js/flyLabel.min.js"></script>
     
     
     <!-- Custom JS -->
