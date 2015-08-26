@@ -5,9 +5,9 @@
   xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
   xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
   <channel>
-    <title>SCC</title>
+    <title>Web Demo</title>
     <link>http://waroengboedaya.github.io</link>
-    <description>SCC</description>
+    <description>Demo Smorgasbord</description>
     <pubDate>Sun, 10 Nov 2013 18:18:00 +0800</pubDate>
     <item>
       <title>Welcome to Jekyll!</title>

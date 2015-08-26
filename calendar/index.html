@@ -4,16 +4,15 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Calendar &#8211; SCC : SCC</title>
-    <meta name="description" content="SCC"/>
+    <title>Calendar &#8211; Web Demo : Demo Smorgasbord</title>
+    <meta name="description" content="Demo Smorgasbord"/>
     <meta name="author" content="Albert Hardy">
     
-    <link rel="canonical" href="http://waroengboedaya.github.io/scc/calendar/">
+    <link rel="canonical" href="http://waroengboedaya.github.io/demo/calendar/">
     <meta name="HandheldFriendly" content="True" />
     <meta name="MobileOptimized" content="320" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-   <!--  <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+   <!--  
    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" /> -->
    <!-- Bootstrap -->
    <!-- Latest compiled and minified CSS -->
@@ -21,24 +20,36 @@
    <!-- Optional theme -->
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/metisMenu/2.1.0/metisMenu.min.css">
-   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.3.2/fullcalendar.min.css">
-   <link rel="stylesheet" href="/scc/assets/css/scheduler.min.css">
-   <!-- Customisation  -->
-   <link rel="stylesheet" type="text/css" href="/scc/vendor/css/bootstrap-multiselect.css" />
-   <link rel="stylesheet" type="text/css" href="/scc/assets/css/scc.css" />
+   <!-- General Customisation  -->
+   <link rel="stylesheet" type="text/css" href="/demo/assets/css/default.css" />
+
+   <!-- Dynamic Style -->  
+     
+    
+    
+    <link rel="stylesheet" type="text/css" href="/demo//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.3.2/fullcalendar.min.css"/>
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="/demo/assets/css/scheduler.min.css"/>
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="/demo/vendor/css/bootstrap-multiselect.css"/>
+    
+    
 
     <!-- Open Graph -->
     <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Calendar">
-    <meta property="og:description" content="bootstrap portal with navigation">
+    <meta property="og:description" content="bootstrap portal with top navigation">
     <meta property="og:url" content="http://waroengboedaya.github.io/calendar/">
-    <meta property="og:site_name" content="SCC">
+    <meta property="og:site_name" content="Web Demo">
 
     <!-- Icons -->
-<!--     <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png">
+    <!-- <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
     <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png">
@@ -54,33 +65,34 @@
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32"> -->
 </head>
 <body class="post-template page-template">
-
     <div id="navbar-full">
   <div id="navbar">
     <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="/scc/"><strong>Portal</strong></a> </div>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="/demo/"><strong>Portal</strong></a> </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
           
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul id="headermenu" class="nav navbar-nav" style="">
-            <li><a href="/scc/beneficiary/">Beneficiaries</a></li>
-            <li><a href="/scc/scc/">Collection Centres</a></li>
-            <li><a href="/scc/collection/">Distribute</a></li>
-            <li><a href="#">Scan Page</a></li>
-            <li><a href="/scc/staff/">Admin &amp; Staff</a></li>
+            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Bootstrap</a>
+            <ul class="dropdown-menu">
+                  <li><a href="/demo/bootgrid/"><i class="fa fa-table"></i> Bootgrid</a></li>
+                  <li><a href="/demo/calendar/"><i class="fa fa-calendar"></i> Calendar</a></li>
+                </ul>
+            </li>
+            <li><a href="/demo">Custom</a></li>
+
           </ul>
           <form id="logoutForm" >
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="/scc/message/"> Messages <span class="label label-info"> 4 </span></a></li>
-              <li class="dropdown user-dropdown"> <a href="/Account/Manage" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> systemadmin <b class="caret"></b></a>
+              <li><a href="/demo"> Messages <span class="label label-info"> 4 </span></a></li>
+              <li class="dropdown user-dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> systemadmin <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                  <li><a href="/scc/account/"><i class="fa fa-user"></i> Your Account</a></li>
-                  <li><a href="/scc/administration/"><i class="fa fa-wrench"></i> Administration</a></li>
-                  <li><a href="/scc/audit/"><i class="fa fa-clock-o"></i> Audit Trail</a></li>
-                  <li><a href="/scc/login/"><i class="fa fa-power-off"></i> Log Out</a></li>
+                  <li><a href="/demo"><i class="fa fa-user"></i> Your Account</a></li>
+                  <li><a href="/demo"><i class="fa fa-wrench"></i> Administration</a></li>
+                  <li><a href="/demo/login/"><i class="fa fa-power-off"></i> Log Out</a></li>
                 </ul>
               </li>
             </ul>
@@ -105,7 +117,7 @@
         <div class="page-header clearfix" style="margin-bottom:10px">
           <div>
             <ol class="breadcrumb">
-              <li><a href="/scc">Home</a></li>  
+              <li><a href="/demo">Home</a></li>  
               <!--  <li><a href="/Beneficiary/Index">Home</a></li> -->
               <li class="active">Calendar</li>
             </ol>
@@ -118,8 +130,9 @@
     
     <div class="row" style="margin-bottom:20px;">
       <div class="col-md-12"> <main id="content" class="content" role="main">
-    <div class="panel panel-default">
-  <div class="panel-heading">TO DO - Text Calendar (Due Date)  <div id="listMenu" class="pull-right">
+  <div class="panel panel-default">
+    <div class="panel-heading">TO DO - Text Calendar (Due Date)
+      <div id="listMenu" class="pull-right">
         <div class="btn-group  btn-group-xs">
           <div class="btn-group btn-group-xs"> <a href="/edit/" class="btn btn-default" style="font-size: 11px;"><i class="fa fa-plus"></i>&nbsp;&nbsp;New</a>
             <button type="button" data-toggle="dropdown" class="btn btn-default  dropdown-toggle btn-xs" style="font-size: 11px;"><i class="fa fa-eye"></i>&nbsp;&nbsp;View&nbsp;<span class="caret"></span></button>
@@ -143,70 +156,19 @@
             </ul>
           </div>
         </div>
-      </div>  <div class="clearfix"></div></div>
-  <div class="panel-body">
-
-  <nav >
-<div class="pull-left"><div class="input-group  input-group-sm pull-right" style="font-size:11px; width:200px; ">
-      <input type="text" class="form-control" placeholder="Quick Filter">
-    <!--   <span class="input-group-btn">
-        <button class="btn btn-default" type="button">Go!</button>
-      </span> -->
-    </div><!-- /input-group --></div>
-
-<div class=" pull-right"><div class="btn-group" role="group" aria-label="...">
-  <button type="button" class="btn btn-primary active">Category</button>
-  <button type="button" class="btn btn-default">Area</button>
-  <button type="button" class="btn btn-default">CI</button>
-  <button type="button" class="btn btn-default">Priority</button>
-  <button type="button" class="btn btn-default">Status</button>
-  <button type="button" class="btn btn-default">Owner</button>
-</div></div>
-    
-
-
-
-
-</nav>
-
-<div class="clearfix"></div>
-
-  
-      <div  style="margin:20px 0">
-<div id='calendar'></div>
-</div>
-<!-- <nav>
-<div class="pull-left"><span style="font-size:12px">Page 1 of 5 (50 of 228 rows listed)</span></div>
-<ul class="pagination pagination-sm pull-right" style="margin:0">
-    <li>
-      <a href="#" aria-label="Previous">
-        <i class="fa fa-fast-backward"></i>
-      </a>
-    </li><li>
-      <a href="#" aria-label="Previous">
-        <i class="fa fa-backward"></i>
-      </a>
-    </li>
-    <li class="active"><a href="#">1</a></li>
-    <li><a href="#">2</a></li>
-    <li><a href="#">3</a></li>
-    <li><a href="#">4</a></li>
-    <li><a href="#">5</a></li>
-   <li>
-      <a href="#" aria-label="Previous">
-        <i class="fa fa-forward"></i>
-      </a>
-    </li><li>
-      <a href="#" aria-label="Previous">
-        <i class="fa fa-fast-forward"></i>
-      </a>
-    </li>
-  </ul>
-</nav> -->
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <div class="panel-body">
+      <nav> </nav>
+      <div class="clearfix"></div>
+      <div style="margin:20px 0">
+        <div id='calendar'></div>
+      </div>
+    </div>
   </div>
-</div>
-
 </main>
+
  </div>
     </div><!-- /.row -->
   </div><!-- /.container -->
@@ -216,13 +178,11 @@
   <footer>
     <div id="footer">
       <hr/> <small>
-            <p class="text-muted"><a href="/scc">SCC</a> &copy;  &bull; All rights reserved.</p>
+            <p class="text-muted"><a href="/demo">Web Demo</a> &copy;  &bull; All rights reserved.</p>
             </small> </div>
   </footer>
 </div>
 <!-- /.container -->
-
-
 
 
 
@@ -232,15 +192,41 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/metisMenu/2.1.0/metisMenu.min.js"></script>
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.3.2/fullcalendar.min.js"></script>
-    <script src="/scc/assets/js/scheduler.min.js"></script>
-    <script src="/scc/vendor/js/jquery.fitvids.js"></script>
-    <script src="/scc/vendor/js/bootstrap-multiselect.js"></script>
 
-     <!-- Custom JS -->
-    <script type="text/javascript" src="/scc/assets/js/scc.js"></script>
+    <!-- Dynamic Script -->  
+     
+    
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.3.2/fullcalendar.min.js"></script>
+    
+    
+    
+    <script src="/demo/assets/js/scheduler.min.js"></script>
+    
+    
+    
+    <script src="/demo/vendor/js/bootstrap-multiselect.js"></script>
+    
+    
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.3.2/fullcalendar.min.js"></script>
+    
+    
+    
+    <script src="/demo/assets/js/scheduler.min.js"></script>
+    
+    
+    
+    <script src="/demo/vendor/js/bootstrap-multiselect.js"></script>
+    
+    
+    
+    <script src="/demo/vendor/js/jquery.fitvids.js"></script>
+    
+    
+    <!-- Custom JS -->
+    <script type="text/javascript" src="/demo/assets/js/default.js"></script>
 
     <!-- Google Analytics Tracking code -->
     <!-- <script type="text/javascript">

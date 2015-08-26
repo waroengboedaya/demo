@@ -23,10 +23,10 @@
       if(document.querySelector("#menu")){
          $('#menu').metisMenu();
       }
-
-
-
-  if(document.querySelector("#calendar")){
+     if(document.querySelector("#grid-basic")){
+        $("#grid-basic").bootgrid();
+    } 
+   if(document.querySelector("#calendar")){
   $('#calendar').fullCalendar({
         // put your options and callbacks here
       now: '2015-06-07',
@@ -97,10 +97,11 @@
 })(jQuery);
 
 //http://stackoverflow.com/questions/4866284/jquery-add-class-active-on-menu
-var index = document.location.href.lastIndexOf("/") + 1;
+/*var index = document.location.href.lastIndexOf("/") + 1;
 var page = document.location.href.substring(index,document.location.href.length);
 var parentpath=  document.location.href.substring(0,index-1);
 var parent=parentpath.substring(parentpath.lastIndexOf("/") + 1,parentpath.length);
 console.log("index :"+index+" -- page:"+page+" -- parent:"+parent);
 $('a[href="'+page+'"]').parents('li').addClass('active');
 $('a[href="'+page+'"]').addClass('active');
+*/
