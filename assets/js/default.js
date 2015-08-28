@@ -5,6 +5,8 @@
 /* globals jQuery, document */
 (function ($, sr, undefined) {
     "use strict";
+     $.material.init();
+     $("select").dropdown();
 
     var $document = $(document);
 
@@ -30,6 +32,7 @@
     if(document.querySelector(".fly-group")){
          $('body').flyLabels();
     } 
+
 
     
 

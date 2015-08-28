@@ -66,7 +66,7 @@
 }
 </style>
 
-<div class="demo-layout-transparent mdl-layout mdl-js-layout">
+<div class="demo-layout demo-layout-transparent mdl-layout mdl-js-layout">
   <header class="mdl-layout__header mdl-layout__header--transparent">
     <div class="mdl-layout__header-row">
       <!-- Title -->
@@ -120,6 +120,15 @@
     width: 100%;
   }
 
+.demo-content {
+  border-radius: 2px;
+  padding: 80px 56px;
+  margin-bottom: 80px;
+}
+
+.demo-layout.is-small-screen .demo-content {
+  padding: 40px 28px;
+}
   </style>
   <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
   <div class="demo-card-wide mdl-card mdl-shadow--2dp mdl-cell mdl-cell--8-col">
@@ -179,7 +188,7 @@
 </form>
 
 </div>
-  <div class="mdl-cell mdl-cell--4-col"><h5>Side Form</h5>
+  <div class="mdl-cell mdl-cell--4-col mdl-cell--hide-phone"><h5>Side Form</h5>
 
   <form action="#">
   <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
@@ -194,8 +203,10 @@
 </div>
  
 </div>
+
+<div class="mdl-cell--hide-phone">
 <hr/>
-<table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp fullwidth">
+<table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp fullwidth ">
   <thead>
     <tr>
       <th class="mdl-data-table__cell--non-numeric fullwidth">Material</th>
@@ -222,6 +233,8 @@
   </tbody>
 </table>
 <hr/>
+</div>
+
 <!-- Image card -->
 <style>
 .demo-card-image.mdl-card {

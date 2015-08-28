@@ -21,7 +21,7 @@
     <url>
       <loc>http://waroengboedaya.github.io/404.html</loc>
       
-        <lastmod>2015-08-28T15:24:39+08:00</lastmod>
+        <lastmod>2015-08-28T17:53:25+08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -36,7 +36,7 @@
     <url>
       <loc>http://waroengboedaya.github.io/mockjax/</loc>
       
-        <lastmod>2015-08-28T15:24:39+08:00</lastmod>
+        <lastmod>2015-08-28T17:53:25+08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -51,7 +51,7 @@
     <url>
       <loc>http://waroengboedaya.github.io/bootflat/</loc>
       
-        <lastmod>2015-08-28T15:24:39+08:00</lastmod>
+        <lastmod>2015-08-28T17:53:25+08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -66,7 +66,22 @@
     <url>
       <loc>http://waroengboedaya.github.io/bootgrid/</loc>
       
-        <lastmod>2015-08-28T15:24:39+08:00</lastmod>
+        <lastmod>2015-08-28T17:53:25+08:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://waroengboedaya.github.io/bsmaterial/</loc>
+      
+        <lastmod>2015-08-28T17:53:25+08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -81,7 +96,7 @@
     <url>
       <loc>http://waroengboedaya.github.io/calendar/</loc>
       
-        <lastmod>2015-08-28T15:24:39+08:00</lastmod>
+        <lastmod>2015-08-28T17:53:25+08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -96,7 +111,7 @@
     <url>
       <loc>http://waroengboedaya.github.io/demo/</loc>
       
-        <lastmod>2015-08-28T15:24:39+08:00</lastmod>
+        <lastmod>2015-08-28T17:53:25+08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -111,7 +126,7 @@
     <url>
       <loc>http://waroengboedaya.github.io/floatlabel/</loc>
       
-        <lastmod>2015-08-28T15:24:39+08:00</lastmod>
+        <lastmod>2015-08-28T17:53:25+08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -126,7 +141,7 @@
     <url>
       <loc>http://waroengboedaya.github.io/</loc>
       
-        <lastmod>2015-08-28T15:24:39+08:00</lastmod>
+        <lastmod>2015-08-28T17:53:25+08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -141,7 +156,7 @@
     <url>
       <loc>http://waroengboedaya.github.io/login/</loc>
       
-        <lastmod>2015-08-28T15:24:39+08:00</lastmod>
+        <lastmod>2015-08-28T17:53:25+08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -156,7 +171,7 @@
     <url>
       <loc>http://waroengboedaya.github.io/material/</loc>
       
-        <lastmod>2015-08-28T15:24:39+08:00</lastmod>
+        <lastmod>2015-08-28T17:53:25+08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -171,7 +186,7 @@
     <url>
       <loc>http://waroengboedaya.github.io/rss.xml</loc>
       
-        <lastmod>2015-08-28T15:24:39+08:00</lastmod>
+        <lastmod>2015-08-28T17:53:25+08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -188,7 +203,7 @@
     <url>
       <loc>http://waroengboedaya.github.io//rss.xml</loc>
       
-        <lastmod>2015-08-28T15:24:39+08:00</lastmod>
+        <lastmod>2015-08-28T17:53:25+08:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
