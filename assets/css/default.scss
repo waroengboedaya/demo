@@ -1,0 +1,20 @@
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+	"../../_sass/syntax"
+;
+/* Global Styles */
+
+/* ------------------------------- */
+body {
+  background-color: #fff;
+}
+.breadcrumb {
+    padding: 0px;
+     margin-bottom: 0px; 
+    list-style: none;
+    background-color: #fff;
+    border-radius: 4px;
+}
+.page-header{
+  margin: 0;
+}
