@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Polymer Cards &#8211; Web Demo : Demo Smorgasbord</title>
+    <meta name="description" content="Demo Smorgasbord"/>
+    <meta name="author" content="Albert Hardy">
+    
+    <link rel="canonical" href="http://waroengboedaya.github.io/demo/polymer/badge/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <!-- Dynamic Import-->  
+     
+    
+    <link rel="import" href="/lib/paper-badge/paper-badge.html">
+    
+    <link rel="import" href="/lib/paper-icon-button/paper-icon-button.html">
+    
+    <link rel="import" href="/lib/iron-icons/iron-icons.html">
+    
+    <link rel="import" href="/lib/paper-styles/color.html">
+    
+    <link rel="import" href="/lib/paper-styles/demo-pages.html">
+    
+
+
+   <!-- Dynamic Style -->  
+     
+    
+    
+    <link rel="stylesheet" type="text/css" href="/demo/lib/paper-styles/demo.css"/>
+    
+    
+
+ </head>
+<body >
+      <style is="custom-style">
+    .horizontal-section {
+      min-width: 120px;
+    }
+
+    .with-badge {
+      display: inline-block;
+      margin-bottom: 30px;
+      overflow: hidden;
+    }
+
+    .red {
+      --paper-badge-background: var(--paper-red-300);
+    }
+    .orange {
+      --paper-badge-background: var(--paper-amber-300);
+    }
+    .green {
+      --paper-badge-background: var(--paper-green-300);
+    }
+
+    paper-icon-button {
+      background-color: #ddd;
+      padding: 3px;
+      border-radius: 3px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    .with-badge > paper-badge {
+      --paper-badge-margin-left: 20px;
+      --paper-badge-margin-bottom: 0px;
+    }
+  </style>
+
+  <div class="horizontal-section-container">
+    <div>
+      <h4>Badging direct sibling</h4>
+      <div class="horizontal-section">
+        <div class="with-badge" tabindex="0">
+          <span>Oxygen</span>
+          <paper-badge label="8"></paper-badge>
+        </div>
+        <br>
+        <div class="with-badge" tabindex="0">
+          <span>Carbon</span>
+          <paper-badge label="6"></paper-badge>
+        </div>
+        <br>
+        <div class="with-badge" tabindex="0">
+          <span>Hydrogen</span>
+          <paper-badge label="1"></paper-badge>
+        </div>
+        <br>
+        <div class="with-badge" tabindex="0">
+          <span>Nitrogen</span>
+          <paper-badge label="7"></paper-badge>
+        </div>
+        <br>
+        <div class="with-badge" tabindex="0">
+          <span>Calcium</span>
+          <paper-badge label="20"></paper-badge>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h4>Badging element by id</h4>
+      <div class="horizontal-section">
+
+
+        <paper-icon-button id="heart" icon="favorite" alt="heart"></paper-icon-button>
+        <paper-icon-button id="back" icon="arrow-back" alt="go back"></paper-icon-button>
+        <paper-icon-button id="fwd" icon="arrow-forward" alt="go forward"></paper-icon-button>
+
+        <paper-badge class="red" for="heart" label="♣︎"></paper-badge>
+        <paper-badge class="orange" for="back" label="♥︎"></paper-badge>
+        <paper-badge class="green" for="fwd" label="♦︎"></paper-badge>
+      </div>
+    </div>
+  </div>
+
+<!-- Import element -->
+
+    <!-- Dynamic Script -->  
+     
+    
+    
+    <script src="/demo/lib/webcomponentsjs/webcomponents-lite.min.js"></script>
+    
+    
+    
+    <script src="/demo/assets/js/mypolymer.js"></script>
+    
+    
+
+
+ 
+<!-- Use element -->
+
+</body>
+</html>
+<!-- Polyfill Web Components for older browsers -->

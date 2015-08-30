@@ -5,10 +5,15 @@
 /* globals jQuery, document */
 (function ($, sr, undefined) {
     "use strict";
-     $.material.init();
+    
      $("select").dropdown();
 
     var $document = $(document);
+
+    //Bootstrap Material
+    if ($.material) { 
+         $.material.init()
+      } 
 
      $(window).bind("load resize", function() {
         console.log($(this).width())
@@ -21,10 +26,14 @@
     })
 
 
+
+
     $document.ready(function () {
       if(document.querySelector("#menu")){
          $('#menu').metisMenu();
       }
+      
+
      if(document.querySelector("#grid-basic")){
         $("#grid-basic").bootgrid();
     } 

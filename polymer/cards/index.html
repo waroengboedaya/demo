@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Polymer Cards &#8211; Web Demo : Demo Smorgasbord</title>
+    <meta name="description" content="Demo Smorgasbord"/>
+    <meta name="author" content="Albert Hardy">
+    
+    <link rel="canonical" href="http://waroengboedaya.github.io/demo/polymer/cards/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <!-- Dynamic Import-->  
+     
+    
+    <link rel="import" href="/lib/paper-card/paper-card.html">
+    
+    <link rel="import" href="/lib/paper-button/paper-button.html">
+    
+    <link rel="import" href="/lib/paper-icon-button/paper-icon-button.html">
+    
+    <link rel="import" href="/lib/iron-icons/iron-icons.html">
+    
+    <link rel="import" href="/lib/iron-flex-layout/iron-flex-layout.html">
+    
+    <link rel="import" href="/lib/paper-styles/color.html">
+    
+
+
+   <!-- Dynamic Style -->  
+     
+    
+    
+    <link rel="stylesheet" type="text/css" href="/demo/lib/paper-styles/demo.css"/>
+    
+    
+
+ </head>
+<body >
+      <style is="custom-style">
+    body {
+      background-color: var(--paper-grey-50);
+    }
+
+    #cards {
+      @apply(--layout-vertical);
+      @apply(--center-justified);
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    paper-card {
+      width: 100%;
+      margin-bottom: 16px;
+    }
+
+    .avatar {
+      display: inline-block;
+      height: 64px;
+      width: 64px;
+      border-radius: 50%;
+      background: var(--paper-pink-500);
+      color: white;
+      line-height: 64px;
+      font-size: 30px;
+      text-align: center;
+    }
+
+    .fancy .title {
+      position: absolute;
+      top: 30px;
+      left: 100px;
+      color: var(--paper-indigo-500);
+    }
+
+    .fancy img {
+      width: 100%;
+    }
+
+    .fancy .big {
+      font-size: 22px;
+      padding: 8px 0 16px;
+      color: var(--google-grey-500);
+    }
+
+    .fancy .medium {
+      font-size: 16px;
+      padding-bottom: 8px;
+    }
+
+    .pink {
+      --paper-card-header-color: var(--paper-pink-500);
+    }
+  </style>
+
+  <div id="cards">
+
+    <paper-card>
+      <div class="card-content">
+        <div>Cards are a convenient means of displaying content composed of different types of objects.
+          <br><br>
+          <b>Hurray!</b>
+        </div>
+      </div>
+    </paper-card>
+
+    <paper-card heading="Some cards only have titles"></paper-card>
+
+    <paper-card id="shadow_demo" heading="Paper Shadows" class="pink" animated-shadow>
+      <div class="card-content">
+        Cards can have different shadows.
+      </div>
+      <div class="card-actions">
+        <paper-button onclick="decreaseShadow()">Decrease</paper-button>
+        <paper-button onclick="increaseShadow()">Increase</paper-button>
+      </div>
+    </paper-card>
+
+    <paper-card >
+      <div class="card-content">
+        Lorem ipsum dolor sit amet, nec ad conceptam interpretaris, mea ne solet repudiandae. Laudem nostrud ei vim. Sapientem consequuntur usu ad, vel etiam philosophia ex, ad quidam option quo. Sed sale integre pericula ei, rebum adipiscing ius ea.
+      </div>
+      <div class="card-actions">
+        <paper-icon-button icon="favorite" title="favorite"></paper-icon-button>
+        <paper-icon-button icon="bookmark" title="bookmark"></paper-icon-button>
+        <paper-icon-button icon="cloud-upload" title="cloud-upload"></paper-icon-button>
+      </div>
+    </paper-card>
+
+    <paper-card heading="Cards can have titles" class="pink">
+      <div class="card-content">
+        Lorem ipsum dolor sit amet, nec ad conceptam interpretaris, mea ne solet repudiandae. Laudem nostrud ei vim. Sapientem consequuntur usu ad, vel etiam philosophia ex, ad quidam option quo. Sed sale integre pericula ei, rebum adipiscing ius ea.
+      </div>
+      <div class="card-actions">
+        <paper-button>Nay</paper-button>
+        <paper-button>Yay!</paper-button>
+      </div>
+    </paper-card>
+
+    <paper-card heading="Titles AND images!" class="pink"
+                image="http://placehold.it/350x150">
+      <div class="card-content">
+        Lorem ipsum dolor sit amet, nec ad conceptam interpretaris, mea ne solet repudiandae. Laudem nostrud ei vim. Sapientem consequuntur usu ad, vel etiam philosophia ex, ad quidam option quo. Sed sale integre pericula ei, rebum adipiscing ius ea.
+      </div>
+      <div class="card-actions">
+        <paper-button>No</paper-button>
+        <paper-button>Yes</paper-button>
+      </div>
+    </paper-card>
+
+    <paper-card heading="Actions can be stacked" class="pink">
+      <div class="card-content">
+        Lorem ipsum dolor sit amet, nec ad conceptam interpretaris, mea ne solet repudiandae. Laudem nostrud ei vim. Sapientem consequuntur usu ad, vel etiam philosophia ex, ad quidam option quo. Sed sale integre pericula ei, rebum adipiscing ius ea.
+      </div>
+      <div class="card-actions">
+        <paper-button>Action</paper-button>
+      </div>
+      <div class="card-actions">
+        <paper-button>Moar action!</paper-button>
+      </div>
+    </paper-card>
+
+    <paper-card class='fancy'>
+      <div class="card-content">
+        <div class="avatar">:)</div>
+        <div class="title">
+          <div class="medium">Title</div>
+          <div class="small">subtitle</div>
+        </div>
+      </div>
+
+      <!-- take this out of the content class so that it can span the whole card -->
+      <img src="http://placehold.it/350x150">
+
+      <div class="card-content">
+        <div class="big">Usu eu novum principes, vel quodsi aliquip ea.</div>
+        <div class="medium">Ut labores minimum atomorum pro. Laudem tibique ut has.</div>
+        <div class="small">Usu eu novum principes, vel quodsi aliquip ea.</div>
+      </div>
+    </paper-card>
+  </div>
+
+  <script>
+   function decreaseShadow() {
+     var card = document.querySelector('#shadow_demo');
+     card.elevation = card.elevation > 0 ? card.elevation - 1 : 0;
+   }
+
+   function increaseShadow() {
+     var card = document.querySelector('#shadow_demo');
+     card.elevation = card.elevation < 5 ? card.elevation + 1 : 5;
+   }
+ </script>
+
+<!-- Import element -->
+
+    <!-- Dynamic Script -->  
+     
+    
+    
+    <script src="/demo/lib/webcomponentsjs/webcomponents-lite.min.js"></script>
+    
+    
+    
+    <script src="/demo/assets/js/mypolymer.js"></script>
+    
+    
+
+
+ 
+<!-- Use element -->
+
+</body>
+</html>
+<!-- Polyfill Web Components for older browsers -->

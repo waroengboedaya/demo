@@ -54,35 +54,56 @@
 <body >
     <!-- Uses a transparent header that draws on top of the layout's background -->
 <style>
-.demo-layout-transparent {
-/*  background: url('/demo/assets/images/material/banner.jpg') center / cover;*/
-  background: #607D8B;
-}
-.demo-layout-transparent .mdl-layout__header,
-.demo-layout-transparent .mdl-layout__drawer-button {
-  /* This background is dark, so we set text to white. Use 87% black instead if
+  .demo-layout-transparent {
+    /*  background: url('/demo/assets/images/material/banner.jpg') center / cover;*/
+    background: #607D8B;
+  }
+  
+  .demo-layout-transparent .mdl-layout__header,
+  .demo-layout-transparent .mdl-layout__drawer-button {
+    /* This background is dark, so we set text to white. Use 87% black instead if
      your background is light. */
-  color: white;
-}
+    color: white;
+  }
 </style>
-
 <div class="demo-layout demo-layout-transparent mdl-layout mdl-js-layout">
   <header class="mdl-layout__header mdl-layout__header--transparent">
     <div class="mdl-layout__header-row">
-      <!-- Title -->
-      <span class="mdl-layout-title">Title</span>
+      <!-- Title --><span class="mdl-layout-title">Title</span>
       <!-- Add spacer, to align navigation to the right -->
       <div class="mdl-layout-spacer"></div>
       <!-- Navigation -->
       <nav class="mdl-navigation">
+        <!--      <a class="mdl-navigation__link" href="">Link</a>
         <a class="mdl-navigation__link" href="">Link</a>
         <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-      </nav>
+        <a class="mdl-navigation__link" href="">Link</a> -->  <a class="mdl-navigation__link" href="">Bootstrap</a>  <a class="mdl-navigation__link" href="">Custom</a>  </nav>
+      <!-- Expandable Textfield -->
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+        <label class="mdl-button mdl-js-button mdl-button--icon" for="search-expandable2"> <i class="material-icons">search</i> </label>
+        <div class="mdl-textfield__expandable-holder">
+          <input class="mdl-textfield__input" type="text" id="search-expandable2" />
+          <label class="mdl-textfield__label" for="search-expandable2"> Enter search text below </label>
+        </div>
+      </div>
+      <!--  <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width is-upgraded" data-upgraded=",MaterialTextfield">
+            <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field" data-upgraded=",MaterialButton">
+              <i class="material-icons">search</i>
+            </label>
+            <div class="mdl-textfield__expandable-holder">
+              <input class="mdl-textfield__input" type="text" id="search-field">
+            </div>
+          </div> -->
+      <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button"> <i class="material-icons">more_vert</i> </button>
+      <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
+        <li class="mdl-menu__item">5.0 Lollipop</li>
+        <li class="mdl-menu__item">4.4 KitKat</li>
+        <li disabled class="mdl-menu__item">4.3 Jelly Bean</li>
+        <li class="mdl-menu__item">Android History</li>
+      </ul>
     </div>
-     <!-- Tabs -->
-  <!--   <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+    <!-- Tabs -->
+    <!--   <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
       <a href="#scroll-tab-1" class="mdl-layout__tab is-active">Tab 1</a>
       <a href="#scroll-tab-2" class="mdl-layout__tab">Tab 2</a>
       <a href="#scroll-tab-3" class="mdl-layout__tab">Tab 3</a>
@@ -91,17 +112,18 @@
       <a href="#scroll-tab-6" class="mdl-layout__tab">Tab 6</a>
     </div> -->
   </header>
-  <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">Title</span>
-    <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="">Link</a>
-      <a class="mdl-navigation__link" href="">Link</a>
-      <a class="mdl-navigation__link" href="">Link</a>
-      <a class="mdl-navigation__link" href="">Link</a>
-    </nav>
+  <div class="mdl-layout__drawer"> <span class="mdl-layout-title">Title</span>
+    <nav class="mdl-navigation">  <span class="mdl-navigation__link" href=""><strong>Bootstrap</strong></span>  <a class="mdl-navigation__link" href="/demo/bootgrid/">Bootgrid</a>  <a class="mdl-navigation__link" href="/demo/calendar/">Calendar</a>   <span class="mdl-navigation__link" href=""><strong>Custom</strong></span>  <a class="mdl-navigation__link" href="/demo/bootflat/">Bootflat</a>  <a class="mdl-navigation__link" href="/demo/bsmaterial/">Bootstrap Material</a>  <a class="mdl-navigation__link" href="/demo/material/">Material Design Lite Basic</a>  <a class="mdl-navigation__link" href="/demo/material-logo/">Material Design Lite Logo</a>   </nav>
   </div>
   <main class="mdl-layout__content">
-   <div class="demo-container mdl-grid">
+    <!-- 
+  
+ --><div class="demo-container mdl-grid">
+
+
+
+
+
   <!-- Wide card with share menu button -->
   <style>
   .demo-card-wide.mdl-card {}
@@ -318,8 +340,7 @@
 
 </div>
 
-
-<!--     <footer class="mdl-mega-footer">
+    <!--     <footer class="mdl-mega-footer">
   <div class="mdl-mega-footer__middle-section">
 
     <div class="mdl-mega-footer__drop-down-section">
@@ -376,17 +397,16 @@
   </div>
 
 </footer> -->
-<footer class="mdl-mini-footer">
-  <div class="mdl-mini-footer__left-section">
-    <div class="mdl-logo">Title</div>
-    <ul class="mdl-mini-footer__link-list">
-      <li><a href="#">Help</a></li>
-      <li><a href="#">Privacy & Terms</a></li>
-    </ul>
-  </div>
-</footer>
+    <footer class="mdl-mini-footer">
+      <div class="mdl-mini-footer__left-section">
+        <div class="mdl-logo">Title</div>
+        <ul class="mdl-mini-footer__link-list">
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Privacy & Terms</a></li>
+        </ul>
+      </div>
+    </footer>
   </main>
-
 </div>
 
 
