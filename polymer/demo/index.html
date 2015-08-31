@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Polymer header panel &#8211; Web Demo : Demo Smorgasbord</title>
+    <meta name="description" content="Demo Smorgasbord"/>
+    <meta name="author" content="Albert Hardy">
+    
+    <link rel="canonical" href="http://waroengboedaya.github.io/demo/polymer/demo/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <!-- Dynamic Import-->  
+     
+    
+    <link rel="import" href="/demo/lib/iron-icons/iron-icons.html">
+    
+    <link rel="import" href="/demo/lib/paper-icon-button/paper-icon-button.html">
+    
+    <link rel="import" href="/demo/lib/paper-toolbar/paper-toolbar.html">
+    
+    <link rel="import" href="/demo/lib/paper-styles/paper-styles.html">
+    
+    <link rel="import" href="/demo/lib/paper-styles/demo-pages.html">
+    
+    <link rel="import" href="/demo/lib/paper-header-panel/paper-header-panel.html">
+    
+    <link rel="import" href="/demo/lib/iron-icon/iron-icon.html">
+    
+    <link rel="import" href="/demo/lib/paper-menu/paper-menu.html">
+    
+    <link rel="import" href="/demo/lib/paper-item/paper-item.html">
+    
+    <link rel="import" href="/demo/lib/paper-button/paper-button.html">
+    
+    <link rel="import" href="/demo/lib/paper-tabs/paper-tabs.html">
+    
+    <link rel="import" href="/demo/lib/paper-dropdown-menu/paper-dropdown-menu.html">
+    
+    <link rel="import" href="/demo/lib/paper-input/paper-input.html">
+    
+    <link rel="import" href="/demo/lib/paper-input/paper-input-container.html">
+    
+    <link rel="import" href="/demo/lib/paper-input/paper-input-error.html">
+    
+    <link rel="import" href="/demo/lib/paper-input/paper-input-char-counter.html">
+    
+    <link rel="import" href="/demo/lib/paper-input/paper-textarea.html">
+    
+    <link rel="import" href="/demo/lib/iron-input/iron-input.html">
+    
+    <link rel="import" href="/demo/lib/iron-icon/iron-icon.html">
+    
+    <link rel="import" href="/demo/lib/iron-flex-layout/classes/iron-flex-layout.html">
+    
+    <link rel="import" href="/demo/lib/paper-tabs/paper-tabs.html">
+    
+    <link rel="import" href="/demo/lib/paper-tabs/paper-tab.html">
+    
+
+
+   <!-- Dynamic Style -->  
+     
+    
+    
+    <link rel="stylesheet" type="text/css" href="/demo/lib/paper-styles/demo.css"/>
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="/demo/lib/paper-styles/color.html"/>
+    
+    
+
+ </head>
+<body class="fullbleed vertical layout">
+        <style is="custom-style">
+      body {
+        padding: 0px;
+      }
+
+      paper-header-panel {
+        /*float: left;*/
+        width: 100%;
+      /*  height: 240px;*/
+        margin: 0px;
+        @apply(--shadow-elevation-2dp);
+         height: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+
+      }
+
+      .paper-header {
+     /*   height: 60px;*/
+        font-size: 16px;
+        line-height: 60px;
+        padding: 0 0px;
+        color: white;
+        transition: height 0.2s;
+      }
+
+      .paper-header.tall {
+        height: 120px;
+      }
+
+      .paper-header.medium-tall {
+        height: 100px;
+        line-height: 50px;
+      }
+
+      .content {
+       /* height: 2000px;*/
+      }
+
+      .cover {
+        margin: 60px;
+      }
+
+      .toolbar-tools.paper-toolbar paper-icon-button[icon=menu] {
+    margin-right: 0px;
+}
+
+     /* .blue .paper-header {
+        background-color: var(--paper-light-blue-500);
+      }
+      .red .paper-header {
+        background-color: var(--paper-red-500);
+      }
+      .orange .paper-header {
+        background-color: var(--paper-amber-500);
+      }
+      .green .paper-header {
+        background-color: var(--paper-green-500);
+      }
+      .cyan .paper-header {
+        background-color: var(--paper-cyan-500);
+      }
+      .lime .paper-header {
+        background-color: var(--paper-lime-500);
+      }
+      .pink .paper-header {
+        background-color: var(--paper-pink-a200);
+      }*/
+
+      /* TODO: replace these with background: linear-gradient(white, var(...))
+       when custom properties allow it */
+
+     /* .blue .content {
+        background: linear-gradient(white, #b3e5fc);
+      }
+      .red .content {
+        background: linear-gradient(white, #ffcdd2);
+      }
+      .orange .content {
+        background: linear-gradient(white, #ffecb3);
+      }
+      .green .content {
+        background: linear-gradient(white, #c8e6c9);
+      }
+      .cyan .content {
+        background: linear-gradient(white, #b2ebf2);
+      }
+      .lime .content {
+        background: linear-gradient(white, #f0f4c3);
+      }
+      .pink .content {
+        background: linear-gradient(white, #f8bbd0);
+      }*/
+
+          paper-menu {
+      display: block;
+    }
+
+    paper-dropdown-menu {
+      text-align: left;
+      margin: auto;
+      width: 180px;
+    }
+
+    paper-dropdown-menu.letters {
+      width: 90px;
+    }
+
+    paper-tabs {
+      width: 400px;
+    }
+
+    .horizontal-section {
+      text-align: center;
+    }
+    </style>
+  
+
+
+      <paper-header-panel mode="waterfall" class="green">
+        <div class="paper-header">
+  <paper-toolbar class="tall" style="height:100px">
+    <paper-icon-button icon="menu"></paper-icon-button>
+ <!--     <paper-dropdown-menu label="Dinosaurs" >
+            <paper-menu class="dropdown-content">
+               <paper-item>aaa</paper-item>
+                <paper-item>bbb</paper-item>
+            </paper-menu>
+          </paper-dropdown-menu> -->
+    <span class="title flex">
+     AT BASE 
+ <paper-icon-button icon="arrow-drop-down"></paper-icon-button>
+    </span>
+   <div style="font-size:12px; line-height:16px; margin-right:16px; text-align:right">
+   ETA<br/> <span style="font-size:20px;">01:00:00</span>
+
+    </div>
+<!--     <paper-icon-button icon="refresh"></paper-icon-button> -->
+    <paper-icon-button icon="face"></paper-icon-button>
+    <paper-tabs selected="1" class="bottom self-end" style="width: 100%">
+        <paper-tab>Map</paper-tab>
+        <paper-tab>Detail</paper-tab>
+        <paper-tab>Updates</paper-tab>
+      </paper-tabs>
+
+
+  </paper-toolbar>
+
+        </div>
+        <div class="fit content">
+            <div style="padding:10px">
+     
+       <div class=" horizontal layout">
+       
+  <paper-input label="Incident Number" value="INC-20150801-001" class="flex"></paper-input>
+   <paper-input label="Priority" value="1" style="width:60px"></paper-input>
+<paper-input label="Alarm" value="1"  style="width:60px"></paper-input>
+
+</div>
+
+      <paper-input label="Incident Type" value="MEDICAL"></paper-input>
+        <paper-textarea label="Incident Location" value="1 ANG MO KIO ELECTRONICS PARK ROAD #04-01, SINGAPORE"></paper-textarea>
+         <paper-input label="Common Name" value="STEngineering Hub"></paper-input>
+      <div class=" horizontal justified layout">
+ <paper-input label="City" value="Singapore"></paper-input>
+<paper-input label="State" value="Singapore"></paper-input>
+
+</div>
+  <div class=" horizontal justified layout">
+
+     <paper-input label="Caller" value="Richard Lim"></paper-input>
+<paper-input label="Contact" value="(65) 91234567"></paper-input>
+</div>
+
+  <paper-textarea label="Description" value="CALLER REPORTED BREATHING DIFFICULTY DUE TO SMOKE INHALATION."></paper-textarea>
+    </div>
+
+
+
+        </div>
+      </paper-header-panel>
+
+
+
+<!-- Import element -->
+
+    <!-- Dynamic Script -->  
+     
+    
+    
+    <script src="/demo/lib/webcomponentsjs/webcomponents-lite.min.js"></script>
+    
+    
+    
+    <script src="/demo/assets/js/mypolymer.js"></script>
+    
+    
+
+
+ 
+<!-- Use element -->
+
+</body>
+</html>
+<!-- Polyfill Web Components for older browsers -->
